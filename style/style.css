@@ -72,8 +72,7 @@ input{
   text-transform: capitalize;
 }
 
-input[type = text],input[type = Email],input[type = number],input[type = date],
-input[type = file],input[type = url],input[type = button],input[type = reset]{
+.username-inp,.email-inp,.phone-inp,.date-inp,.file-inp,.url-inp,.submit-inp,.reset-inp{
   padding: 0.5rem 0.75rem;
   border: 3px solid  rgb(51, 51, 71);
   border-radius: 0.5rem;
@@ -87,4 +86,68 @@ input[type = file],input[type = url],input[type = button],input[type = reset]{
 .language-underline{
   width: 11.5rem;
   margin-top: -7px;
+}
+
+.profile-container{
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.user{
+  background-color: white;
+  width: 20rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0px 0px 15px #000;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.edit-btn,.delete-btn{
+  background-color: var(--clr-purple);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border: 3px solid var(--clr-purple);
+  border-radius: 0.5rem;
+}
+
+.user-profile-name,.user-email,.user-phone,.user-dob{
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+} 
+
+.user-file-inp{
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--clr-purple);
+}
+
+.hidden-container{
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.user-language-underline{
+  width: 10.8rem;
+  margin-top: -0.4rem;
+  border: none;
+  border-top: 1px solid var(--clr-purple);
+}
+
+.user-gender-underline{
+  width: 3.5rem;
+  margin-top: -0.4rem;
+  border: none;
+  border-top: 1px solid var(--clr-purple);
 }
